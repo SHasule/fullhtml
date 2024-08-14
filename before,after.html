@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0%;
+            padding: 0%;
+            
+         
+
+        }
+        header::before{
+            content: "";
+            background-image: url('sr.jpg');
+            position: absolute;
+            top: 0;
+            left: 0;
+            height:100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+           
+        }
+ .navigation{
+    display: flex;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ li{
+    list-style: none;
+    padding: 23px 23px;
+ }
+      section{
+                align-items: center;
+              
+                height: 338px;
+            display: flex;
+            
+            flex-direction: column;
+            margin: 2px 24px;
+            justify-content: center;
+        }
+        h1{
+            font-size: 3rem;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        /* section::before{
+           content:"this is content" 
+        } */
+    </style>
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+            <li class="item">home</li>
+            <li class="item">about us</li>
+            <li class="item">services</li>
+            <li class="item">contact us</li>   
+        </ul>
+      </nav>
+    </header>
+      <section>
+        <h1>
+            welcome to coding world
+        </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis deleniti non provident laudantium voluptate nulla reiciendis officiis mollitia, magni sunt incidunt impedit, quod ad animi ea officia sed est atque veniam facere nobis deserunt.</p>
+      </section>
+  <hr>
+</body>
+</html>

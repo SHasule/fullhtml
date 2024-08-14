@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar' 
+            'section section section aside'
+            'footer footer footer footer'
+            ;
+        }
+       .itm{
+        background-color: aquamarine;
+        border: 2px solid;
+        padding: 12px 20px;
+       }
+       #navbar{
+        grid-area: navbar;
+
+       }
+       #section{
+        grid-area: section;
+
+       }
+       #aside{
+        grid-area: aside;
+
+       }
+       footer{
+        grid-area: footer;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="itm"> home about contact us</div>
+        <div id="section" class="itm">lorem112 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi rerum libero quisquam. Quibusdam ut minus unde ullam odit ab a magni reiciendis fugiat et blanditiis debitis, nobis esse pariatur modi? Nihil quibusdam eaque dicta soluta quidem. Distinctio nobis quos facilis ut quod laborum ad magnam unde quam! Necessitatibus non cum alias. Commodi, facilis? Delectus, nisi repellendus, illo asperiores numquam in unde facilis corrupti officiis natus odit neque assumenda corporis similique! Facilis quis perspiciatis, itaque nihil totam hic aliquid omnis. Delectus iure hic voluptas architecto reiciendis ipsum, nemo quaerat tempore? Consequatur eius earum repellendus, dolorem adipisci nostrum iusto ab cupiditate rerum pariatur quia nesciunt atque quos eveniet. Ab perspiciatis asperiores ipsam nostrum iusto incidunt fugiat reprehenderit autem beatae laudantium ipsum nemo, illo necessitatibus vel consequatur. Laudantium beatae laboriosam voluptatem fuga assumenda illum dolore dolorum animi magnam a provident, vero quae aut ab non, placeat labore! Assumenda voluptates accusamus velit earum iure? Soluta, officia, autem ipsa obcaecati, labore quia odio inventore numquam pariatur corporis ipsum magnam quod est eaque ex tempore veritatis sit saepe ab! Iste, ratione libero assumenda non ipsam tempore hic itaque culpa tempora maxime dolorum dolores delectus inventore harum asperiores eos, consectetur neque dignissimos consequuntur laborum obcaecati odio fugiat et? Exercitationem, est iure. Quam quis aliquid quae rerum vel animi!</div>
+        <div id="aside" class="itm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sequi nihil dignissimos aut cumque magni perspiciatis? Adipisci distinctio illum omnis est tempora, corrupti eum error dolor architecto. Accusantium quas ducimus accusamus quia, vitae harum excepturi ad provident possimus praesentium, sit dolor laudantium nostrum! Temporibus, libero natus explicabo dolorem architecto ipsa inventore voluptatibus distinctio rerum impedit, quasi ea quidem consequuntur modi repellendus adipisci blanditiis eligendi quae molestias id porro? Et cupiditate dicta magnam iusto maiores. Animi, tempore.
+        </div>
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
+        <div class="item">item-14</div> -->
+        <footer class="itm" id="footer">this is footer</footer>
+    </div>
+
+</body>
+</html>

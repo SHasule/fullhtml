@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid media queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar' 
+            'section section section aside'
+            'footer footer footer footer'
+            ;
+        }
+       
+       
+       nav{
+        grid-area: navbar;
+
+       }
+       section{
+        grid-area: section;
+
+       }
+       aside{
+        grid-area: aside;
+
+       }
+       footer{
+        grid-area: footer;
+       }
+        @media (max-width:300px){
+            body{
+                background-color: aqua;
+            }    
+        }
+        @media(min-width:300px) and (max-width:500px){
+            body{
+                background-color: rgb(41, 12, 209);
+            }
+        }
+
+           @media(min-width:500px) and (max-width:800px){
+            body{
+                background-color: rgb(12, 209, 15);
+            }
+        }
+        @media(min-width:801px){
+            body{
+                background-color: rgb(170, 209, 12);
+            }
+        }
+        .border-style{
+            border: 2px solid;
+            background-color: bisque;
+            padding:  10px 22px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="border-style">home about contact</nav>
+    
+    <section class="border-style">
+        <h2>learn css with me</h2>
+    </section>
+    <aside class="border-style"><h1>more about us</h1></aside>
+</div>
+<footer class="border-style">copyright </footer>
+</body>
+</html>
